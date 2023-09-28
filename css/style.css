@@ -14,6 +14,7 @@
 9. Media Queries
 ------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*----- 1. Reset.css -----*/
 
@@ -88,7 +89,7 @@ html * {
 }
 */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins';
+	font-family: 'Poppins', sans-serif;
 }
 
 p {
@@ -184,7 +185,7 @@ p {
 .navbar {
 	font-size: 14px;
   font-family: 'Poppins', sans-serif;
-	font-weight: 400;
+	font-weight: bold;
 	text-transform: capitalize;
 	padding-top: 25px;
 	letter-spacing: 1px;
@@ -238,7 +239,7 @@ p {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #e7e7e8;
+  color: #FFFFFF;
   -webkit-transition: all 0.5s;
 	-moz-transition: all 0.5;
   transition: all 0.5s;
@@ -253,7 +254,7 @@ p {
   color: #222222;
   }
 
-
+/*--------Saat Turun---------*/
 .navbar-default .navbar-nav > .active > a:hover {
     background: transparent;
     color: #626953;
@@ -347,7 +348,7 @@ p {
 	font-size: 14px;
 	padding-top: 5px;
 	height: 60px;
-	background-color: #CDBE8C;
+	background-color: #cdbe8c;
 	-webkit-transition: all 0.6s;
 	-moz-transition: all 0.6s;
 	-o-transition: all 0.6s;
@@ -363,7 +364,7 @@ p {
 }
 
 .navbar-default.past-main .navbar-nav > li > a {
-  color: #fff;
+  color: #626953;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
@@ -498,7 +499,7 @@ p {
 
 
 .software .btn-action {
-font-family: Arial;
+font-family: 'Poppins', sans-serif;
  background-color: #3f51b5;
  border: 1px solid #3f51b5;
  border-radius: 50px;
@@ -1099,7 +1100,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 }
 
 .pitch-intro {
-	max-width: 650px;
+	max-width: 800px;
 	margin: 0 auto;
 	padding: 0 0 100px 0;
 }
@@ -1313,12 +1314,27 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 }
 
 .feature-sub .sub-inner .btn-action {
+	font-family: 'Poppins', sans-serif;
+	background-color: #626953;
+	border: 1px solid #626953;
+	border-radius: 0;
 	color: #FFFFFF;
-	background: #626953;
-	border-color: #626953;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1;
+	padding: 20px 42px;
+	text-transform: uppercase;
+	outline: none;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
 }
 
 .feature-sub .sub-inner .btn-action:hover {
+	background: transparent;
+	outline: none;
 	color: #626953;
 	background: transparent;
 	border-color: #626953;
@@ -1348,7 +1364,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 }
 
 .software .feature-sub .sub-inner h1 {
-	font-family: 'Josefin Sans';
+	font-family: 'Poppins', sans-serif;
 	font-size: 34px;
 	font-weight: 300;
 	line-height: 1.1;
@@ -1482,227 +1498,6 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	padding: 50px 0 50px 0;
 	overflow: hidden;
 }
-
-
-
-/*  --------------------------------------------------
-------------- Reviews Section Styling ----------------
------------------------------------------------------*/
-
-.review-section {
-	padding: 150px 0 150px 0;
-	text-align: center;
-	background: #626953;
-}
-
-
-.reviews {
-  width: 100%;
-}
-
-
-.review-single img {
-  width:80px;
-	height:80px;
-}
-
-.review-text h3 {
-	font-family: 'Poppins', sans-serif;
-  font-size: 13px;
-	font-weight: 500;
-	letter-spacing: 1px;
-	line-height: 1.5;
-  color: #222225;
-  text-transform:uppercase;
-}
-
-.review-text .ion {
-	display: inline-block;
-	margin-top: 20px;
-  font-size: 14px;
-  color: #ff8000;
-}
-
-.review-text p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-	font-weight: 400;
-  padding: 20px 10px 20px 10px;
-	letter-spacing: 1px;
-	line-height: 1.5;
-  color: #fff;
-}
-
-
-
-
-/*  --------------------------------------------------
-------------- Pricing Section Styling ----------------
------------------------------------------------------*/
-
-
-.pricing {
-	padding: 50px 0 100px 0;
-}
-
-.pricing-content {
-	padding: 60px 0 0 0;
-	text-align: center;
-}
-
-.pricing h1 {
-	font-size: 28px;
-	font-weight: 400;
-	letter-spacing: -1px;
-	line-height: 1.2;
-}
-
-.pricing h4 {
-	font-size: 14px;
-	font-weight: 400;
-	color: #626953;
-	margin: 10px 0 30px 0;
-}
-
-.pricing p {
-	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	color: #444444;
-	line-height: 1.4;
-}
-
-.pricing .btn-buy {
-	padding: 40px 0 20px 0;
-}
-
-.pricing .btn-buy img {
-	display: inline;
-}
-
-.pricing .price-tag h2 {
-	font-family: 'Josefin Sans';
-	font-size: 24px;
-	font-weight: 400;
-	color: #626953;
-	margin: 0 0 20px 0;
-}
-
-
-
-
-/* ----- Pricing Tables Styling Starts ----- */
-
-.pricing-section {
-	width: 100%;
-	height: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	background: #2e2e30;
-}
-
-.pricing-intro {
-	padding-bottom: 30px;
-}
-
-.pricing-intro h1 {
-	font-size: 37px;
-	color: #FFF;
-	font-weight: 600;
-	line-height: 1.4;
-	text-transform:uppercase;
-}
-
-
-.pricing-intro p {
-	font-size: 15px;
-	color: #626953;
-	font-weight: 300;
-	line-height: 1.4;
-	letter-spacing: 1px;
-	margin-top: 10px;
-	margin-bottom: 50px;
-}
-
-.pricing-section .table-left, .pricing-section .table-right {
-	padding: 20px 20px 50px 20px;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	background-color: #222225;
-	box-shadow: 0px 0px 80px 0px rgba(0,0,0,.1);
-	border: transparent;
-	width: 100%;
-}
-
-.pricing-details {
-	padding: 50px 50px 40px 50px;
-}
-
-.table-left .icon, .table-right .icon {
-	font-size:60px;
-	margin: 0 auto;
-	color:#626953;
-}
-
-.table-left .pricing-details span, .table-right .pricing-details span {
-	display: inline-block;
-	font-family: 'Poppins', sans-serif;
-	font-size: 48px;
-	font-weight: 700;
-	color: #FFF;
-	margin-bottom: 20px;
-}
-
-.table-left .pricing-details h2, .table-right .pricing-details h2 {
-	font-size: 18px;
-	font-weight: 600;
-	color: #7d7d7f;
-	margin-bottom: 30px;
-}
-
-.table-left .pricing-details p, .table-right .pricing-details p {
-	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
-	font-weight: 300;
-	color: #505050;
-	letter-spacing: 1px;
-	line-height: 1.4;
-}
-
-.table-left .pricing-details ul, .table-right .pricing-details ul {
-	margin-top: 30px;
-	margin-bottom: 50px;
-}
-
-
-.table-left .pricing-details li, .table-right .pricing-details li {
-	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	color: #7d7d7f;
-	line-height: 1.4;
-	margin-bottom: 10px;
-}
-
-.pricing-section .table-left:hover, .pricing-section .table-right:hover {
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
-}
-
-.pricing-section .table-left, .pricing-section .table-right {
-	margin-top: 20px;
-}
-
-.pricing-section .table-center {
-	margin-top: 0;
-}
-
-/* ----- Pricing Section Styling Ends ----- */
-
-
 
 
 /* ----- Counter Section Styling Starts -----*/
